@@ -6,6 +6,8 @@ import search_icon from "../../assets/search.png";
 import upload_icon from "../../assets/upload.png";
 import notification_icon from "../../assets/notification.png";
 import profile_icon from "../../assets/jack.png";
+import voice_search from "../../assets/voice_search.png";
+
 import { Link } from "react-router-dom";
 
 function Navabar({ setSidebar }) {
@@ -19,7 +21,7 @@ function Navabar({ setSidebar }) {
           alt=""
         />
         <Link to="/">
-          <img className="logo" src={logo} alt="" />
+          <img className="logo"  src={logo} alt="" />
         </Link>
       </div>
 
@@ -28,6 +30,8 @@ function Navabar({ setSidebar }) {
           <input type="text" placeholder="Search" />
           <img className="search-icon" src={search_icon} alt="" />
         </div>
+
+        <img className="voice-search" src={voice_search} alt="" />
       </div>
 
       <div className="nav-right flex-div">
